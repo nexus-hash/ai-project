@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Reference</title>
+
+    <!--<link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/jumbotron/">-->
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="https://getbootstrap.com/docs/4.0/examples/jumbotron/jumbotron.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="/"><img src="static/Logo.png" height="27" width="27" class="masthead-brand"/>&nbsp;&nbsp;Lyrisis</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home <span class="sr-only"></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/download">Download</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Reference</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact">Contact</a>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+
+    <main role="main">
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <div class="container">
+          <h1 class="display-3">Reference</h1>
+          <p>Information about the Lyrisis client-server app.</p>
+          <p><a class="btn btn-primary btn-lg" href="#" role="button">Download the App (Android) &raquo;</a></p>
+        </div>
+      </div>
+
+      <div class="container">
+
+        <h2>How It Works</h2>
+        <br>
+        <p>The Flutter app takes in the seed, the temperature, the artist style and the number of words to be predicted.</p>
+        <p>This information is passed on to the server, which tries to predict the next specified number of words.</p>
+        <p>The predicted words are returned to the Flutter client app, where they are displayed to the user.</p>
+        <br />
+
+        <p>The code for the client can be found at: </p>
+
+        <br>
+        <h2>Deployment of The REST API</h2>
+        <br>
+        <p>The server is a webapp built using the Flask microframework. It is easy to set up and got the work done for this project.</p>
+        <p>The Tensorflow library needs to be used for the server to make predictions. However, deployment to Heroku has certain limitations,
+        one of them being that the slug size may not exceed 500 MB. Including Tensorflow 2.2.0 in the dependencies causes the slug size to exceed 500 MB.</p>
+
+        <p>It should be noted that this limitation is applicable for deployment to Heroku using Git. The alternative method used in case of deployment of
+        this server was dockerization. A Docker image was built, which was then pushed to Heroku. There is no size limitation for Docker images.</p>
+
+        <br>
+        <hr>
+
+      </div> <!-- /container -->
+
+    </main>
+
+    <footer class="container">
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!-- index.html -->
+
+<!-- We're using templates (Jinja), so we'll just cut to the chase -->
+
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block navbar %}
+
+<a class="nav-link active" href="/">Home</a>
+<a class="nav-link" href="/download">Download</a>
+<a class="nav-link" href="/about">About</a>
+<a class="nav-link" href="/reference">Reference</a>
+<a class="nav-link" href="/contact">Contact</a>
+
+{% endblock %}
+
+{% block body %}
+
+<main role="main" class="inner cover">
+    <h1 class="cover-heading">Lyrisis</h1>
+    <p class="lead">What you see now is the front-end of a REST API for the lyrics generation app <b>Lyrisis</b> built in Flutter.</p>
+    <br />
+    <p class="lead">
+        <a href="/download" class="btn btn-lg btn-secondary"><span class="glyphicon glyphicon-download"></span>Download</a>
+    </p>
+</main>
+
+{% endblock %}

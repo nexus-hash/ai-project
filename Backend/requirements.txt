@@ -1,0 +1,4 @@
+numpy
+flask
+gunicorn
+tensorflow==2.5.1
